@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Environment variables - credentials
+.env*
+
+# Screenshots
+/screenshots/
+
+# Allure Reports
+/allure-results/
+/allure-report/

@@ -1,0 +1,21 @@
+{
+  "appName": "Docuport",
+  "baseUrl": "https://beta.docuport.app",
+  "loginPageTitle": "Docuport",
+  "roles": ["client", "employee", "advisor", "supervisor"],
+  "leftMenu": {
+    "client":     ["UPLOAD", "Home", "Received docs", "My uploads", "Invitations", "1099 Form", "Reconciliations"],
+    "employee":   ["UPLOAD", "Home", "Received docs", "My uploads", "Clients", "Users",
+                   "Bookkeeping", "1099 Form", "Reconciliations"],
+    "advisor":    ["UPLOAD", "Home", "Received docs", "My uploads", "Clients", "Invitations",
+                   "Users", "Leads", "Bookkeeping", "1099 Form", "Reconciliations"],
+    "supervisor": ["Home", "Received docs", "My uploads", "Clients", "Users",
+                   "Leads", "Bookkeeping", "1099 Form", "Reconciliations"]
+  },
+  "invalidLogins" : [
+                      {"username": "invalid2@gmail.com", "password": "invalid123!", "message": "Username or password is incorrect"},
+                      {"username": "",                  "password": "invalid123!", "message": "Please enter your username or email address"},
+                      {"username": "invalid2@gmail.com", "password": "",            "message": "Please enter your password"},
+                      {"username": "",                  "password": "",            "message": "Please enter your username or email address"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "b1-docuport-automation-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "npx playwright test",
+    "test:file": "npx playwright test --grep login-logout.spec.js",
+    "test:tag": "npx playwright test --grep @test8",
+    "test:tag:workes": "npx playwright test --grep @test8 --workers=1",
+    "html:report": "npx playwright show-report",
+    "test:headed": "npx playwright test --headed",
+    "test:beta": "cross-env TEST_ENV=beta npx playwright test",
+    "test:pre": "cross-env TEST_ENV=pre npx playwright test",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "cross-env TEST_ENV=beta npx playwright test --grep @test12 --project=webkit --workers=1",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.14.0",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9"
+  }
+}

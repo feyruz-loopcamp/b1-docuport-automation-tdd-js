@@ -1,0 +1,15 @@
+{
+  "appName": "Docuport",
+  "baseUrl": "https://pre.docuport.app",
+  "loginPageTitle": "Docuport",
+  "roles": ["client", "employee", "advisor", "supervisor"],
+  "leftMenu": {
+    "client":     ["Upload", "Home", "Received docs", "My uploads", "Invitations"],
+    "employee":   ["Upload", "Home", "Received docs", "My uploads", "Clients", "Users",
+                   "Bookkeeping", "1099 Form", "Reconciliations"],
+    "advisor":    ["Upload", "Home", "Received docs", "My uploads", "Clients", "Invitations",
+                   "Users", "Leads", "Bookkeeping", "1099 Form", "Reconciliations"],
+    "supervisor": ["Home", "Received docs", "My uploads", "Clients", "Users",
+                   "Leads", "Bookkeeping", "1099 Form", "Reconciliations"]
+  }
+}
