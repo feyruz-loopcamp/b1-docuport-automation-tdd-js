@@ -12,7 +12,7 @@ export class BasePage {
 
     // This will help us to initialize elmenets 
     locator(selector) {
-        return this.page.locator(selector); 
+        return this.page.locator(selector); // this is returning locator initilizing 
     }
 
 
