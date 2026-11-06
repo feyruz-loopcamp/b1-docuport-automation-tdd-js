@@ -15,7 +15,8 @@
     "test:webkit": "cross-env TEST_ENV=beta npx playwright test --grep @test12 --project=webkit --workers=1",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
-    "allure:serve": "allure serve allure-results"
+    "allure:serve": "allure serve allure-results",
+    "test:snoke": "npx playwright test --grep @smoke"
   },
   "keywords": [],
   "author": "",
